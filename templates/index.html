@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: top;
+            height: 100vh;
+            margin: 0;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 10px;
+        }
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+        .logo {
+            height: 50px;
+            width: 50px;
+            margin-right: 20px;
+        }
+        .title-container {
+            flex-grow: 1;
+        }
+        .title {
+            font-size: 24px;
+            text-align: center;
+        }
+        .attendance-register {
+            font-size: 16px;
+        }
+        .github-logo {
+            height: 50px;
+            width: 50px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo-container">
+            <!-- Wrap the logo image in an anchor tag with the href and target="_blank" attributes -->
+            <a href="https://example.com" target="_blank">
+                <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" class="logo">
+            </a>
+        </div>
+        <div class="title-container">
+            <h1 class="title">Student Portal</h1>
+        </div>
+        <div class="logo-container">
+            <!-- Wrap the GitHub logo image in an anchor tag with the href and target="_blank" attributes -->
+            <a href="https://github.com" target="_blank">
+                <img src="{{ url_for('static', filename='githublogo.png') }}" alt="GitHub Logo" class="github-logo">
+            </a>
+
+        </div>
+        <div class="attendance-register">
+            Attendance Register
+        </div>
+    </div>
+    <!-- Other content goes here -->
+</body>
+</html>
+
